@@ -1,0 +1,510 @@
+body {
+    font-family: "Roboto Flex", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 20px;
+  }
+  .footer-column .social-media {
+    margin-top: 20px;
+  }
+  
+  .footer-column .social-media ul.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Align items side by side */
+    justify-content: center; /* Center the icons horizontally */
+  }
+  
+  .footer-column .social-media ul.social-icons li {
+    margin-right: 15px; /* Space between icons */
+  }
+  
+  .footer-column .social-media ul.social-icons li a {
+    font-size: 30px; /* Adjust icon size */
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-column .social-media ul.social-icons li a:hover {
+    color: #007bff; /* Hover effect */
+  }
+  
+  
+
+
+  h1{
+    font-size: 50px;
+  }
+  .logo img {
+    width: 200px; /* Adjust as needed */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Ensures no inline gaps */
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252422;
+    color: white;
+    padding: 10px 75px;
+  }
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  header nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  header nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all .2s;
+    padding : 0  10px 0 10px;
+  }
+  header nav a:hover {
+    color: #FF5800;
+    letter-spacing: 1.5px;
+    border: 1px solid #ff5800;
+    border-radius: 0px 25px 25px 25px;
+    box-shadow: 0 2px 17px 1px #ff5800;
+  }
+
+  header .btn {
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff590000; /* Base color of the button */
+    border: solid 1px #ff5800;
+    border-radius: 25px 0px 25px 0px;
+    padding: 10px 20px;
+    cursor: default; /* No pointer effect since there's no interaction */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(255, 88, 0, 0.7),
+      0 0 30px rgba(255, 88, 0, 0.5);
+    animation: glowPulse 1.5s infinite;
+  }
+
+  .header .btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    background: rgba(255, 88, 0, 0.6);
+    filter: blur(15px);
+    opacity: 0.8;
+    z-index: -1;
+    transform: translate(0, 16px);
+  }
+
+  @keyframes glowPulse {
+    0%,
+    100% {
+      box-shadow: 0 0 15px rgba(255, 88, 0, 0.7),
+        0 0 30px rgba(255, 88, 0, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 25px rgba(255, 88, 0, 1),
+        0 0 50px rgba(255, 88, 0, 0.8);
+    }
+  }
+  .header .btn:hover{
+    transform: translate(0, 16px);
+  }
+  .hero {
+    background: url("/nvidia_assets/images/hero.png") no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px 20px;
+    height: 400px;
+  }
+  .hero h1 {
+    font-size: 4rem;
+    margin: 0;
+    line-height: 80px;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+  }
+
+  .hero button {
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff590000; /* Base color of the button */
+    border: solid 1px #ffffff;
+    border-radius: 25px 0px 25px 0px;
+    padding: 10px 20px;
+    cursor: default; /* No pointer effect since there's no interaction */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(255, 88, 0, 0.7),
+      0 0 30px rgba(255, 88, 0, 0.5);
+    animation: glowPulse 1.5s infinite;
+  }
+
+  .hero button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    background: rgba(255, 88, 0, 0.6);
+    filter: blur(15px);
+    opacity: 0.8;
+    z-index: -1;
+  }
+
+  @keyframes glowPulse {
+    0%,
+    100% {
+      box-shadow: 0 0 15px rgba(255, 88, 0, 0.7),
+        0 0 30px rgba(255, 88, 0, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 25px rgba(255, 88, 0, 1),
+        0 0 50px rgba(255, 88, 0, 0.8);
+    }
+  }
+  .section{
+    background-image: url("/nvidia_assets/images/Section.png");
+    background-color: #252422;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .Nvidia {
+    background-image: url("/nvidia_assets/images/Techsolution.png");
+    background-color: #252422;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 300px 100px 300px;
+    
+  }
+
+  .section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .section h2, h3 {
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  .section p {
+    margin: 10px 0;
+    color: #fff;
+  }
+
+  .im1{
+    height: 50px;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .features .feature {
+    padding: 20px;
+    border: 1px solid #FF5800;
+    border-radius: 10px 0 10px 0;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.103);
+  }
+  .features .feature01 {
+    padding: 20px;
+    border: 1px solid #FF5800;
+    border-radius: 10px 0 10px 0;
+    margin: 20px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.103);
+  }
+  .container {
+    width: 800px;
+    margin-left: 280px;
+    margin-top: 50px;
+    padding: 10px 40px 10px 40px;
+    border: 1px solid #ff5800;
+    border-radius: 20px 0 20px 0;
+    height: 500px;
+    backdrop-filter: blur(5px);
+  }
+  .Nvidia .container h1 {
+    background-image: linear-gradient(90deg, #ff5800, white, #aea7a7 150%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Ensures text takes the background gradient */
+  }
+
+  .nimage{
+    height: 500px;
+    margin-top: 100px;
+    position: absolute;
+    margin-left: -250px;
+    opacity: 50%;
+  }
+
+  .arrow{
+    font-size: 25px;
+  }
+
+  #features h1{
+    background-image: linear-gradient(90deg, #ff5800, white, #aea7a7 150%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Ensures text takes the background gradient */
+    display: inline-block;
+  }
+  .ctanew h1{
+    background-image: linear-gradient(90deg, #ff5800, white, #aea7a7 150%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Ensures text takes the background gradient */
+    display: inline-block;
+  }
+
+  h1 {
+    text-align: center;
+    color: #dadada;
+  }
+  .button-container {
+    text-align: center;
+  }
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px 0 10px 0;
+    color: white;
+  }
+  #transcript,
+  #feedback {
+    margin-top: 20px;
+    height: 150px;
+  }
+  #feedback {
+    background-color: rgba(0, 0, 0, 0.103);
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    backdrop-filter: blur(100%);
+    color: #dadada;
+    padding-left: 20px;
+  }
+  .hidden {
+    display: none;
+  }
+  #loading {
+    color: #dadada;
+    text-align: center;
+  }
+  #cta .section {
+    border: 1px solid #FF5800;
+    border-radius: 10px 0 10px 0;
+  }
+  .section .ctanew{
+    border: 1px solid #FF5800;
+    border-radius: 50px 0 50px 0;
+    width: 70vw;
+    margin-left: 220px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.103);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .footer-wrapper {
+    background-color: #180700;
+    background-image: url("/nvidia_assets/images/footer.png");
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    margin-top: -11px;
+    margin-bottom: 0;
+    top: 0;
+    padding: 60px;
+}
+
+footer {
+    background-color: #280e0168;
+    color: white;
+    padding: 40px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid white;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+footer .footer-column {
+    width: 25%;
+    margin: 0 0 20px 0; /* Adjusted margin for spacing */
+}
+
+footer .footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+footer .footer-column .logo {
+    margin-top: 10px;
+}
+
+footer .footer-column-menu h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+footer .footer-column p,
+footer .footer-column ul,
+footer .footer-column-menu ul,
+footer .footer-column input,
+footer .footer-column button {
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+footer .footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-column ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-column ul li a:hover {
+    color: #FF5800;
+}
+
+footer .footer-column-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-column-menu ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-column-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-column-menu ul li a:hover {
+    color: #FF5800;
+}
+
+footer .newsletter input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+footer .newsletter button {
+    background-color: #FF5800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+footer p {
+    font-size: medium;
+}
+
+/* New styles for Social Media Icons */
+footer .footer-column .social-media {
+    width: 100%; /* Make it take full width */
+    margin-top: 30px; /* Space before the social icons */
+    text-align: center;
+}
+
+footer .footer-column .social-media .social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center icons */
+    margin-top: 20px;
+}
+
+footer .footer-column .social-media .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+footer .footer-column .social-media .social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+footer .footer-column .social-media .social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+footer .footer-column .social-media .social-icons a:focus img {
+    transform: scale(1.1);
+}
+
+footer .footer-column .social-media .social-icons a:active img {
+    transform: scale(0.95);
+}
+
+.im{
+  background-color: white;
+  height: 30px;
+}
+
+.circle {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1000;
+  transform-origin: center;
+}
+
+.circle.large {
+  width: 20px; /* Larger circle size */
+  height: 20px;
+  border:solid 2px rgba(255, 88, 0, 0.7); /* Semi-transparent orange */
+  box-shadow: 0 0 15px rgba(255, 88, 0, 0.8), 0 0 30px rgba(255, 88, 0, 0.5); /* Glowing effect */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.circle.small {
+  width: 10px; /* Smaller circle size */
+  height: 10px;
+  background-color: #ff5800; /* Solid orange */
+  box-shadow: 0 0 10px #ff5800, 0 0 20px #ff5800; /* Glow for smaller circle */
+  transition: transform 0.3s ease-out; /* Slightly slower movement */
+}
+
+
+
