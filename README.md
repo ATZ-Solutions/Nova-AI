@@ -1,6 +1,6 @@
-# Nova AI - AI-Powered Voice Tool
+# Nova AI - AI-driven Interview Coaching
 
-Nova AI is an advanced voice recognition tool designed to enhance productivity and efficiency by seamlessly converting speech into text. Developed by ATZ Solutions, this tool leverages AI-driven technology to deliver high accuracy and a user-friendly experience.
+Nova AI is an advanced AI-driven interview coaching tool designed to enhance job preparation and boost confidence by simulating real interview experiences. Developed by ATZ Solutions With NVIDIA Riva SDK, this tool leverages AI technology to provide personalized feedback, improve responses, and optimize communication skills.
 
 ## Features
 - **Real-time Speech-to-Text Conversion**: Convert spoken words into written text effortlessly.
